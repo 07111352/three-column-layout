@@ -1,0 +1,39 @@
+/* CSS Document */
+
+/*以下方法为采用 左右浮动式，必须要求html中main主体内容放在left,right的后面。缺点是，先加载左右侧边栏，然后再加载主体区域。*/
+
+body,ul,li{
+	margin:0;
+	padding:0;
+}
+#wrap{
+	margin:20px;
+	padding:20px;
+	background:#eee;
+	border:1px solid #999;
+	overflow:auto;
+}
+#left{
+	float:left;
+	width:158px;
+	padding:20px;
+	border:1px solid #999;
+	background:#fff;
+}
+#right{
+	float:right;
+	width:80px;
+	padding:20px 20px 0;
+	border:1px solid #999;
+	background:#fff;
+}
+#right ul li{
+	list-style:none;
+	margin-bottom:20px;
+}
+#main{
+	margin-left:220px;
+	margin-right:142px;
+	border:1px solid #999;
+	background:#fff;
+	padding:20px;
